@@ -15,7 +15,8 @@
     nav a { text-decoration: none; margin: 0 10px; color: #444; font-weight: bold; }
     section { padding: 60px 20px; max-width: 1100px; margin: auto; }
     .courses, .products, .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card { background: #f8f8f8; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .card { background: #f8f8f8; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center; }
+    .card img { width: 100%; border-radius: 10px; margin-bottom: 10px; }
     .cta { background: #f0f0f0; text-align: center; padding: 40px 20px; }
     .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; }
     .footer { background: #222; color: white; text-align: center; padding: 20px; }
@@ -27,7 +28,6 @@
   <nav>
     <div><strong>Wellness Journey</strong></div>
     <div>
-      <a href="#about">About</a>
       <a href="#courses">Courses</a>
       <a href="#certificates">Certificates</a>
       <a href="#products">Store</a>
@@ -41,25 +41,23 @@
     <a href="#courses" class="btn">Explore Courses</a>
   </header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We’re dedicated to promoting holistic wellness through Yoga, Meditation, and Naturopathy based on Indian values. Our certified instructors guide learners across all levels – online and at our physical centers.</p>
-  </section>
-
   <section id="courses">
     <h2>Our Courses</h2>
     <div class="courses">
       <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Yoga+Class" alt="Beginner Yoga">
         <h3>Beginner Yoga</h3>
         <p>4 Weeks | Online/Offline</p>
         <p>Learn basic postures and breathing techniques.</p>
       </div>
       <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Meditation" alt="Meditation Mastery">
         <h3>Meditation Mastery</h3>
         <p>2 Weeks | Online</p>
         <p>Calm your mind with proven meditation practices.</p>
       </div>
       <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Senior+Yoga" alt="Senior Wellness">
         <h3>Senior Wellness</h3>
         <p>Ongoing | Offline Only</p>
         <p>Gentle movements and healing routines for elders.</p>
@@ -77,14 +75,17 @@
     <h2>Naturopathy & Wellness Store</h2>
     <div class="products">
       <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Detox+Tea" alt="Herbal Detox Tea">
         <h4>Herbal Detox Tea</h4>
         <p>Boost immunity naturally</p>
       </div>
       <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Aromatherapy" alt="Aromatherapy Oil">
         <h4>Aromatherapy Oil</h4>
         <p>Relieves stress and improves sleep</p>
       </div>
       <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Yoga+Mat" alt="Eco Yoga Mat">
         <h4>Eco Yoga Mat</h4>
         <p>Non-slip, organic material</p>
       </div>
@@ -120,6 +121,11 @@
       <button class="btn">Send Message</button>
     </form>
     <p>Or call/WhatsApp us at <strong>+91-9876543210</strong></p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We’re dedicated to promoting holistic wellness through Yoga, Meditation, and Naturopathy based on Indian values. Our certified instructors guide learners across all levels – online and at our physical centers.</p>
   </section>
 
   <footer class="footer">
