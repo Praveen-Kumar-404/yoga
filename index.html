@@ -1,190 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ॐ Yoga & Wellness - Courses for Body & Mind</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellness Journey - Yoga & Naturopathy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom, #fffdf4, #fef3e7);
-      color: #333;
-      padding: 2rem;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      font-family: 'Playfair Display', serif;
-      color: #6b240c;
-    }
-    section {
-      margin-bottom: 2.5rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: #fff;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      background: #fef7e5;
-    }
-    .logo {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #db5f00;
-    }
-    .contact a {
-      text-decoration: none;
-      color: #007b5f;
-    }
-    ul {
-      padding-left: 1rem;
-      list-style: disc;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    header p {
-      color: #555;
-      font-style: italic;
-    }
-    .quote {
-      font-size: 1.2rem;
-      font-style: italic;
-      margin-top: 1rem;
-      color: #7b3f00;
-    }
-    .cta-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #6b240c;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 1rem;
-    }
-    .cta-btn:hover {
-      background-color: #db5f00;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; background: #fff; color: #333; }
+    header { background: url('https://images.unsplash.com/photo-1585402350641-8f4fb3d40b06') no-repeat center/cover; color: white; padding: 100px 20px; text-align: center; }
+    header h1 { font-size: 3rem; margin-bottom: 20px; }
+    header p { font-size: 1.2rem; }
+    nav { background: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav a { text-decoration: none; margin: 0 10px; color: #444; font-weight: bold; }
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    .courses, .products, .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #f8f8f8; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .cta { background: #f0f0f0; text-align: center; padding: 40px 20px; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 10px 0; }
+    .footer { background: #222; color: white; text-align: center; padding: 20px; }
+    .btn { background: #00897b; color: white; padding: 10px 20px; border: none; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 10px; }
   </style>
 </head>
 <body>
+
+  <nav>
+    <div><strong>Wellness Journey</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#products">Store</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <header>
-    <h1 class="logo">ॐ Yoga & Wellness</h1>
-    <p>Inspired by Sanskrit, Powered by Peace</p>
-    <p class="quote">“योगः चित्तवृत्तिनिरोधः” – Yoga is the stilling of the fluctuations of the mind.</p>
+    <h1>Revive Your Body & Mind</h1>
+    <p>Learn Yoga, Meditation & Naturopathy – Online and Offline</p>
+    <a href="#courses" class="btn">Explore Courses</a>
   </header>
 
   <section id="about">
-    <div class="card">
-      <h2>Welcome to ॐ Yoga & Wellness</h2>
-      <p>Yoga and wellness are intertwined in every aspect of our platform. Whether you're starting your journey or deepening your practice, our courses are designed to bring harmony to the body, mind, and soul. Accessible in multiple languages, our offerings are tailored to fit into your lifestyle.</p>
-      <p>Our online and offline courses are led by experienced instructors who ensure you achieve your wellness goals, whether at home or in person.</p>
-      <a href="#courses" class="cta-btn">Explore Our Courses</a>
-    </div>
+    <h2>About Us</h2>
+    <p>We’re dedicated to promoting holistic wellness through Yoga, Meditation, and Naturopathy based on Indian values. Our certified instructors guide learners across all levels – online and at our physical centers.</p>
   </section>
 
   <section id="courses">
     <h2>Our Courses</h2>
-    <div class="grid">
+    <div class="courses">
       <div class="card">
-        <h3>Sunrise Yoga</h3>
-        <p>Start your day with energizing stretches and mindful breathing. This course helps improve flexibility and mental clarity. Available online and offline at our center.</p>
-        <a href="#" class="cta-btn">Enroll Now</a>
+        <h3>Beginner Yoga</h3>
+        <p>4 Weeks | Online/Offline</p>
+        <p>Learn basic postures and breathing techniques.</p>
       </div>
       <div class="card">
-        <h3>Pranayama & Meditation</h3>
-        <p>Learn powerful breathing techniques and meditation practices that reduce stress and promote inner peace. Join us online or offline to dive deep into this calming practice.</p>
-        <a href="#" class="cta-btn">Enroll Now</a>
+        <h3>Meditation Mastery</h3>
+        <p>2 Weeks | Online</p>
+        <p>Calm your mind with proven meditation practices.</p>
       </div>
       <div class="card">
-        <h3>Beginner to Advanced Yoga</h3>
-        <p>Whether you're a beginner or experienced yogi, our progressive curriculum ensures that you grow at your own pace. Available both online and offline.</p>
-        <a href="#" class="cta-btn">Enroll Now</a>
+        <h3>Senior Wellness</h3>
+        <p>Ongoing | Offline Only</p>
+        <p>Gentle movements and healing routines for elders.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates & Benefits</h2>
+    <p>All course completions include a digitally verifiable certificate. Gain access to expert webinars, guided sessions, and lifetime membership in our community.</p>
+    <img src="https://via.placeholder.com/400x200?text=Sample+Certificate" alt="Certificate sample">
+  </section>
+
+  <section id="products">
+    <h2>Naturopathy & Wellness Store</h2>
+    <div class="products">
+      <div class="card">
+        <h4>Herbal Detox Tea</h4>
+        <p>Boost immunity naturally</p>
+      </div>
+      <div class="card">
+        <h4>Aromatherapy Oil</h4>
+        <p>Relieves stress and improves sleep</p>
+      </div>
+      <div class="card">
+        <h4>Eco Yoga Mat</h4>
+        <p>Non-slip, organic material</p>
       </div>
     </div>
   </section>
 
   <section id="testimonials">
-    <h2>Customer Experiences</h2>
-    <div class="card">
-      <p>🌟 “The online classes were a game-changer! I never thought I could achieve so much from home.” – <em>Meera, Delhi</em></p>
-      <p>🌟 “Joining the offline classes has been a transformative experience. The atmosphere is peaceful and rejuvenating.” – <em>Ramesh, Pune</em></p>
-      <p>🌟 “I never miss my morning yoga sessions. It's become a part of my routine!” – <em>Ananya, Bengaluru</em></p>
-    </div>
-  </section>
-
-  <section id="features">
-    <h2>Why Choose Us?</h2>
-    <div class="grid">
+    <h2>What Our Students Say</h2>
+    <div class="testimonials">
       <div class="card">
-        <h3>Flexible Learning</h3>
-        <p>Take our courses online or offline, with flexible timings to suit your schedule.</p>
+        <p>“I’ve never felt more energized. Thank you for the support and beautiful sessions!”</p>
+        <strong>- Reema S.</strong>
       </div>
       <div class="card">
-        <h3>Expert Guidance</h3>
-        <p>Our instructors are experienced in guiding students of all levels, ensuring personal growth and progress.</p>
-      </div>
-      <div class="card">
-        <h3>Global Community</h3>
-        <p>Join our growing community of yogis from around the world. Share experiences, challenges, and successes.</p>
+        <p>“Very easy to follow and the instructors are incredibly helpful.”</p>
+        <strong>- Arjun K.</strong>
       </div>
     </div>
   </section>
 
-  <section id="store">
-    <h2>Yoga Store</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Essential Oils</h3>
-        <p>Explore our range of relaxing and rejuvenating essential oils – perfect for your practice and daily wellness rituals.</p>
-      </div>
-      <div class="card">
-        <h3>Yoga Mats</h3>
-        <p>Our eco-friendly yoga mats provide comfort and support for your practice. Available in different colors and designs.</p>
-      </div>
-      <div class="card">
-        <h3>Herbal Teas</h3>
-        <p>Soothe your senses with our selection of ayurvedic teas designed for relaxation and detoxification.</p>
-      </div>
-    </div>
+  <section class="cta">
+    <h2>Ready to Transform Your Life?</h2>
+    <p>Join our courses now and embrace your wellness journey.</p>
+    <a href="#courses" class="btn">Start Now</a>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <div class="card">
-      <p>📞 <strong>Phone:</strong> +91-98765-43210</p>
-      <p>💬 <a href="#">Chat on WhatsApp</a></p>
-      <p>📧 <strong>Email:</strong> contact@yogabharat.org</p>
-    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button class="btn">Send Message</button>
+    </form>
+    <p>Or call/WhatsApp us at <strong>+91-9876543210</strong></p>
   </section>
 
-  <section id="enroll">
-    <div class="grid">
-      <div class="card">
-        <h2>Enroll & Payment</h2>
-        <p>Quick and secure payments via Razorpay, Paytm, and UPI. One-click enrollment. Scholarships available for students and seniors.</p>
-      </div>
-      <div class="card">
-        <h2>Join Our Online or Offline Classes</h2>
-        <p>Attend from anywhere in the world via Zoom or visit our serene yoga center nestled in the Aravallis. Flexible timings, weekend retreats, and group batches available.</p>
-        <a href="#" class="cta-btn">Start Your Journey</a>
-      </div>
-    </div>
-  </section>
+  <footer class="footer">
+    <p>&copy; 2025 Wellness Journey | Follow us: 
+      <i class="fab fa-instagram"></i> 
+      <i class="fab fa-youtube"></i>
+    </p>
+  </footer>
+
 </body>
 </html>
